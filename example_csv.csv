@@ -1,0 +1,2 @@
+Username,Real name,Email,Password,Accesslevel (value),Send mail to user (binary)
+dummy,Importtest dummy,dummy@test.org,1234567890!,25,0
