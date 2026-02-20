@@ -155,7 +155,7 @@ foreach( $t_file_content as $t_file_row ) 	{
             
             if( !is_blank( $f_email ) && config_get( 'enable_email_notification' ) == ON && $f_send_email_notification) {
 
-                $t_subject = "[DRK Verden MDE Bugtracker] Your account has been created";
+                $t_subject = "[$g_window_title] Your account has been created";
 
                 $t_body = "Hello " . $f_realname . ",\n\n"
                         . "an administrator created an account for you.\n\n"
