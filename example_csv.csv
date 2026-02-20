@@ -1,2 +1,4 @@
 Username,Real name,Email,Password,Accesslevel (value),Send mail to user (binary)
-dummy,Importtest dummy,dummy@test.org,1234567890!,25,0
+dummy,No Mail to Me,dummy@test.org,1234567890!,25,0
+dummy2,Info Mail to me, dummy2@test.org,123456789!,25,1
+dummy3,Pls send reset mail,dummy3@test.org,,25,1
