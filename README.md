@@ -41,7 +41,7 @@ Title row is allowed.
 5. Access Level 
   Use the number value here ( see below)  
   If omitted, default value for new accounts will be used  
-6. Send email (ignored if no password supplied)
+6. Send email (ignored if no password supplied)  
   0 =  do not send email  
   1 =  Send email  
 	
