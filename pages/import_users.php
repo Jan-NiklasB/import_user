@@ -23,6 +23,10 @@ foreach( $t_file_content as $t_file_row ) 	{
 	}
 	# Explode into elements
 	$t_file_row = explode( $f_separator, $t_file_row );
+
+	# trim space at beginning and end
+	$t_file_row = array_map('trim', $t_file_row);
+	
 	# Variables
 	$f_username        = $t_file_row[0];
 	$f_realname        = $t_file_row[1];
@@ -55,7 +59,7 @@ foreach( $t_file_content as $t_file_row ) 	{
 		continue;
 	}
 	#check if it is a valid email address
-	if ( is_blank( $f_email ) || !strchr( $f_email, '@' ) ) {
+	if ( is_blank( $f_email ) || !filter_var( $f_email, FILTER_VALIDATE_EMAIL ) ) {
 		echo "No valid email email address for ".$f_username;
 		echo "<br>";
 		continue;
