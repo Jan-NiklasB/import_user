@@ -31,30 +31,30 @@ a backup of your database before importing.
 
 Lay-out CSV file
 ----------------
-Please ensure following columns are available.
+Please ensure following columns are available **in this order**.  
 Title row is allowed.
 
-Username
-Real name
-Email address
-Password 
-Access Level 
-	Use the number value here ( see below)
-	If omitted, default value for new accounts will be used
-Send email
-	0 =  do not send email
-	1 =  Send email
+1. Username  
+2. Real name  
+3. Email address  
+4. Password (if empty, reset mail will be send)
+5. Access Level 
+  Use the number value here ( see below)  
+  If omitted, default value for new accounts will be used  
+6. Send email (ignored if no password supplied)
+  0 =  do not send email  
+  1 =  Send email  
 	
-User accounts will default to:
- -Not Protected
- -Enabled
+User accounts will default to:  
+- Not Protected  
+- Enabled
  
 # available access levels 
-define( 'ANYBODY', 0 );
-define( 'VIEWER', 10 );
-define( 'REPORTER', 25 );
-define( 'UPDATER', 40 );
-define( 'DEVELOPER', 55 );
-define( 'MANAGER', 70 );
-define( 'ADMINISTRATOR', 90 );
-define( 'NOBODY', 100 ); 
+- define( 'ANYBODY', 0 );
+- define( 'VIEWER', 10 );
+- define( 'REPORTER', 25 );
+- define( 'UPDATER', 40 );
+- define( 'DEVELOPER', 55 );
+- define( 'MANAGER', 70 );
+- define( 'ADMINISTRATOR', 90 );
+- define( 'NOBODY', 100 ); 
